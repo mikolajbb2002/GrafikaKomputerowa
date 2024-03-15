@@ -263,7 +263,7 @@ public class SceneGraph extends JPanel {
     };
 
     private static SceneGraphNode filledTriangle = new SceneGraphNode() {
-        void doDraw(Graphics2D g) {  // width = 1, height = 1, center of base is at (0,0);
+        void doDraw(Graphics2D g) { 
             Path2D path = new Path2D.Double();
             path.moveTo(-0.5, 0);
             path.lineTo(0.5, 0);
@@ -273,7 +273,7 @@ public class SceneGraph extends JPanel {
         }
     };
 
-    private JPanel display;  // The JPanel in which the scene is drawn.
+    private JPanel display;  
 
     /**
      * Constructor creates the scene graph data structure that represents the
@@ -288,13 +288,13 @@ public class SceneGraph extends JPanel {
                 Graphics2D g2 = (Graphics2D) g.create();
                 g2.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
                 applyLimits(g2, X_LEFT, X_RIGHT, Y_TOP, Y_BOTTOM, false);
-                g2.setStroke(new BasicStroke(pixelSize)); // set default line width to one pixel.
+                g2.setStroke(new BasicStroke(pixelSize)); 
                 world.draw(g2);
             }
         };
         display.setPreferredSize(new Dimension(WIDTH, HEIGHT));
         display.setBackground(BACKGROUND);
-        final Timer timer = new Timer(17, new ActionListener() { // about 60 frames per second
+        final Timer timer = new Timer(17, new ActionListener() { 
             public void actionPerformed(ActionEvent evt) {
                 updateFrame();
                 repaint();

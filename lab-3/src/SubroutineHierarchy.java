@@ -82,7 +82,7 @@ public class SubroutineHierarchy extends JPanel {
         Color saveColor = g2.getColor();
         g2.setStroke(new BasicStroke(2));
 
-        int numOfVertices = 13;
+        int numOfVertices = 14;
         double angle = (Math.PI * 2) / numOfVertices;
 
         int[] xPoints = new int[numOfVertices];

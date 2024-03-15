@@ -27,11 +27,11 @@ public class SceneGraph extends JPanel {
     private final static double Y_BOTTOM = -3;
     private final static double Y_TOP = 3;
 
-    private final static Color BACKGROUND = Color.WHITE; // Initial background color for drawing.
+    private final static Color BACKGROUND = Color.WHITE; 
 
-    private float pixelSize;  // The size of a pixel in drawing coordinates.
+    private float pixelSize;  
 
-    private int frameNumber = 0;  // Current frame number, goes up by one in each frame.
+    private int frameNumber = 0; 
 
     private CompoundObject world; // SceneGraphNode representing the entire scene.
 

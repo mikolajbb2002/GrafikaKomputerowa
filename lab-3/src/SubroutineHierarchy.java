@@ -23,7 +23,7 @@ public class SubroutineHierarchy extends JPanel {
     private final static int WIDTH = 800;   
     private final static int HEIGHT = 600;
 
-    private final static double X_LEFT = -4;    // The xy limits for the coordinate system.
+    private final static double X_LEFT = -4;   
     private final static double X_RIGHT = 4;
     private final static double Y_BOTTOM = -3;
     private final static double Y_TOP = 3;
@@ -115,7 +115,7 @@ public class SubroutineHierarchy extends JPanel {
     }
 
 
-    private static void filledRect(Graphics2D g2) { // Fills a square, size = 1, center = (0,0)
+    private static void filledRect(Graphics2D g2) { 
         g2.fill(new Rectangle2D.Double(-0.5, -0.5, 1, 1));
     }
 

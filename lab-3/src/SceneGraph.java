@@ -4,11 +4,7 @@ import javax.swing.*;
 import java.awt.geom.*;
 import java.util.ArrayList;
 
-/**
- * A panel that displays a two-dimensional animation that is constructed
- * using a scene graph to implement hierarchical modeling.  There is a
- * checkbox that turns the animation on and off.
- */
+
 public class SceneGraph extends JPanel {
 
     public static void main(String[] args) {
@@ -21,12 +17,12 @@ public class SceneGraph extends JPanel {
         window.setVisible(true);
     }
 
-    //-------------------------- Create the world and implement the animation --------------
+   
 
-    private final static int WIDTH = 800;   // The preferred size for the drawing area.
+    private final static int WIDTH = 800; 
     private final static int HEIGHT = 600;
 
-    private final static double X_LEFT = -4;    // The xy limits for the coordinate system.
+    private final static double X_LEFT = -4;    
     private final static double X_RIGHT = 4;
     private final static double Y_BOTTOM = -3;
     private final static double Y_TOP = 3;

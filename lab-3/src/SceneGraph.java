@@ -104,7 +104,7 @@ public class SceneGraph extends JPanel {
 
     private static SceneGraphNode hexagon = new SceneGraphNode() {
         void doDraw(Graphics2D g) {
-            int n = 13;
+            int n = 14;
             double angle = (Math.PI * 2) / n;
 
             int[] xPoints = new int[n];

@@ -131,13 +131,13 @@ public class SubroutineHierarchy extends JPanel {
                 Graphics2D g2 = (Graphics2D) g.create();
                 g2.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
                 applyLimits(g2, X_LEFT, X_RIGHT, Y_TOP, Y_BOTTOM, false);
-                g2.setStroke(new BasicStroke(pixelSize)); // set default line width to one pixel.
-                drawWorld(g2);  // draw the world
+                g2.setStroke(new BasicStroke(pixelSize)); 
+                drawWorld(g2);  
             }
         };
         display.setPreferredSize(new Dimension(WIDTH, HEIGHT));
         display.setBackground(BACKGROUND);
-        final Timer timer = new Timer(17, new ActionListener() { // about 60 frames per second
+        final Timer timer = new Timer(17, new ActionListener() { 
             public void actionPerformed(ActionEvent evt) {
                 updateFrame();
                 repaint();

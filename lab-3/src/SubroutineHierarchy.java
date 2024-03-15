@@ -20,7 +20,7 @@ public class SubroutineHierarchy extends JPanel {
         window.setVisible(true);
     }
 
-    private final static int WIDTH = 800;   // The preferred size for the drawing area.
+    private final static int WIDTH = 800;   
     private final static int HEIGHT = 600;
 
     private final static double X_LEFT = -4;    // The xy limits for the coordinate system.
